@@ -1,13 +1,20 @@
 $(document).ready(function () {
-    //save
+
+    function showMessage() {
+        $("#message").show().delay(800).hide("slow");
+    }
+
     function saveTask() {
+        showMessage();
         let userInfo = $(this).siblings(".description").val();
         let time = $(this).parent().attr("id");
 
         localStorage.setItem(time, userInfo);
         //show message to user
+
         //hide message after so many seconds
     }
+
     $('.saveBtn').on('click', saveTask);
 
     function updateRowColor() {
