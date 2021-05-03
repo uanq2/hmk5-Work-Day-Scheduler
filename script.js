@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     function showMessage() {
-        $("#message").show().delay(800).hide("slow");
+        $("#message").show().delay(3500).hide("slow");
     }
 
     function saveTask() {
